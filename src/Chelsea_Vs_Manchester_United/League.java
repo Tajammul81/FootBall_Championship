@@ -73,23 +73,23 @@ public class League {
 //        System.out.println("Goal Scored after " + goal2.Goal_Time + " mins by " + player1.PlayerName + " of the " + team1.TeamName);
 //        System.out.println("Goal Scored after " + goal3.Goal_Time + " mins by " + team2.players[1].PlayerName + " of the " + team2.TeamName);
         System.out.println(" ");
-        for (Player The_Players : team1.players) {
+        for (Player The_Players : team2.players) {
 
             String lastName = The_Players.PlayerName.substring(The_Players.PlayerName.indexOf(" "),
                     The_Players.PlayerName.length());
             
             //System.out.println(FullName);
-            if (lastName.matches(".*Co.*")) {
+            if (lastName.matches(".*ah.*")) {
                 System.out.println("Found " + The_Players.PlayerName);
 
             }
 
         }
         //Player[] name= team2.players;
-        for (Player The_Players : team2.players) {
+        for (Player The_Players : team1.players) {
             String lastName = The_Players.PlayerName.substring(The_Players.PlayerName.indexOf(" "),
                     The_Players.PlayerName.length());
-
+              
             String firstName = The_Players.PlayerName.substring(The_Players.PlayerName.indexOf(The_Players.PlayerName),
                     The_Players.PlayerName.indexOf(lastName));
             String FullName = lastName + ", " + firstName;
